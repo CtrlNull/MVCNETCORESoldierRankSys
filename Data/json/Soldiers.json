@@ -1,0 +1,28 @@
+{
+    "SoldierList" : [
+        {
+            "FirstName": "Raphael",
+            "LastName": "Fonseca",
+            "DateOfEntry": "",
+            "CurrentGrade": ""
+        },
+        {
+            "FirstName": "Dave",
+            "LastName": "Powell",
+            "DateOfEntry": "",
+            "CurrentGrade": ""
+        },
+        {
+            "FirstName": "Richard",
+            "LastName": "Davis",
+            "DateOfEntry": "",
+            "CurrentGrade": ""
+        },
+        {
+            "FirstName": "John",
+            "LastName": "Wayne",
+            "DateOfEntry": "",
+            "CurrentGrade": ""
+        }
+    ]    
+}
