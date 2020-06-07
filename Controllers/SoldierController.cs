@@ -28,10 +28,24 @@ namespace InterviewExercise.Controllers
             return View();
         }
 
+        public SoldierContainer UpdateSoldierRank(SoldierUpdateRequest soldierRequest) 
+        {
+            SoldierContainer soldierInfo = new SoldierContainer();
+
+            if (soldierRequest == null)
+                Error();
+
+            // Send to entity
+
+            return null;
+        }
+
+
         public IActionResult Privacy()
         {
             return View();
         }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
