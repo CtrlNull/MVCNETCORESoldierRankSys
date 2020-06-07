@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Uh+mPiWruUPwQL6owImwWziCcL3xEzZ4gIu0DR8dne0HXopgpCD5beWRP8okWWKRZB8hwrlHu/VsPBVl/ZKY6g==",
+  "dgSpecHash": "8udsKAuy8BV+5o9KfLZaTGzyx//XvEFUR7/7rBEqwKBCOWH0Vapm59XrEwl2sfBCtaJsbYKmcQ8eTt9WfFZR0g==",
   "success": true,
   "projectFilePath": "/home/ctrl_null/repos/InterviewExercise/InterviewExercise.csproj",
   "expectedPackageFiles": [
+    "/home/ctrl_null/.nuget/packages/bootstrap/3.4.1/bootstrap.3.4.1.nupkg.sha512",
+    "/home/ctrl_null/.nuget/packages/jquery/1.9.1/jquery.1.9.1.nupkg.sha512",
+    "/home/ctrl_null/.nuget/packages/jscolor/1.0.0/jscolor.1.0.0.nupkg.sha512",
     "/home/ctrl_null/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/ctrl_null/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "/home/ctrl_null/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512",

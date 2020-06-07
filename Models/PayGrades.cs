@@ -6,5 +6,6 @@ namespace InterviewExercise.Models
         public string Rank {get; set;}
         public string TimeInGradeMin {get; set;}
         public string TimeInServiceMin {get; set;}
+        public string ColorValue {get; set;}
     }
 }

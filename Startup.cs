@@ -26,6 +26,7 @@ namespace InterviewExercise
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddRazorPages();
             services.AddDbContext<MvcSoldierContext>(options => 
             options.UseSqlServer(Configuration.GetConnectionString("SoldierListContext")));
         }
@@ -52,6 +53,7 @@ namespace InterviewExercise
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapRazorPages();
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Soldier}/{action=Index}/{id?}");

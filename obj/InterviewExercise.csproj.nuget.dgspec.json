@@ -39,6 +39,14 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[3.1.4, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[3.4.1, )"
+            },
+            "jscolor": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             }
           },
           "imports": [

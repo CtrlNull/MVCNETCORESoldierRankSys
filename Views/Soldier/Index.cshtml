@@ -1,9 +1,59 @@
+@model SoldierContainer
+
 @{
     ViewData["Title"] = "Home Page";
 }
 
+<script src="http://code.highcharts.com/highcharts.js"></script>
+
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <p>This is a test</p>
+        <div>
+            <fieldset class="border p-2">
+                <legend class="w-auto">Rank</legend>
+                @foreach (var paygrades in @Model.PayGrades)
+                {
+                    @Html.Label(paygrades.Rank)
+                    @Html.TextBox(paygrades.ColorValue, new {@class= "jscolor"})
+                }
+            </fieldset>
+        </div>
+        <div class="row">
+            @foreach (var soldier in @Model.SoldierList)
+            {
+                <p style="">@Html.Label(soldier.CurrentGrade)</p>
+                <canvas id="doughnutChart"></canvas>
+                <div>
+                    <img src="@Url.Content(soldier.SoldierImage)" width="2em;" class="rounded-cicle" />  
+                    <br/>
+                    <div class="form-group input-group-sm">
+                        @* @Html.Label(soldier.EnlistedGradeInformation)
+                        @Html.TextBoxFor(model => model.DropOffDate, new { @class = "form-control datepicker", placeholder = "Enter Drop-off date here..." })
+                        @Html.ValidationMessageFor(model => model.DropOffDate) *@
+                    </div>
+                </div>
+          }
+        </div>
 </div>
+
+<script>
+//doughnut
+var ctxD = document.getElementById("doughnutChart").getContext('2d');
+var myLineChart = new Chart(ctxD, {
+type: 'doughnut',
+data: {
+labels: ["Red", "Green", "Yellow", "Grey", "Dark Grey"],
+datasets: [{
+data: [300, 50, 100, 40, 120],
+backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+}]
+},
+options: {
+responsive: true
+}
+});
+
+    $(function () { // will trigger when the document is ready
+       $('.datepicker').datepicker(); //Initialise any date pickers
+    });
+</script>

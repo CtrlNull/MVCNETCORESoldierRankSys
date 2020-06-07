@@ -9,5 +9,7 @@ namespace InterviewExercise.Models
         public string LastName {get; set;}
         public DateTime DateOfEntry {get; set;}
         public string CurrentGrade {get; set;}
+        public string SoldierImage {get; set;}
+        public EnlistedGradeInformation EnlistedGradeInformation {get; set;}
     }
 }

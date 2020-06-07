@@ -1,12 +1,13 @@
 using System;
+using System.Collections.Generic;
 
 namespace InterviewExercise.Models
 {
 
     public class SoldierContainer  
     {
-        public SoldierList SoldierList {get; set;}
-        public EnlistedGradeInformation EnlistedGradeInformation {get; set;}
+        public List<SoldierList> SoldierList {get; set;}
+        public List<PayGrades> PayGrades {get; set;}
     }
     public class SoldierUpdateRequest
     {
